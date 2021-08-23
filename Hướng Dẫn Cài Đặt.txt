@@ -1,0 +1,27 @@
+Hướng dẫn cài đặt website 
+
+
+*** Yêu cầu về phần mềm:
+
+  Hệ thống yêu cầu máy tính chạy trên hệ điều hành Windows 7 64 bit kết hợp phần mềm
+  XAMPP hỗ trợ phiên bản PHP 7.3 - link download: https://www.apachefriends.org/download.html.
+
+*** Hướng dẫn cài đặt:
+
+  - Copy thư mục VDO trong thư mục Source Code vào thư mục htdocs của xampp.
+    Thông thường thư mục htdocs sẽ có đường dẫn: C:\xampp\htdocs.
+
+  - Sau khi copy thư mục PhoneStore vào thư mục htdocs, tại thư mục htdocs này chọn thư mục VDO sau đó giữ phím Shift và click chuột phải và chọn open command window here để mở CMD cho thư mục VDO.
+    Tiếp theo nhập dòng lệnh public thư mục storage của laravel là: php artisan storage:link
+
+  - Truy cập đường dẫn: http://localhost/phpmyadmin/ và thêm cơ sở dư liệu với tên là: db_vdo.
+
+  - Improt cơ sở dữ liệu mẫu db_vdo.sql vào cơ sở dữ liệu db_phonestore vừa tạo.
+    file cơ sở dữ liệu mới db_vdo.sql này nằm trong cùng một thư mục với tài liệu hưỡng dẫn này.
+
+
+  - Khởi động lại Apache và MySQL của XAMPP và truy cập website bằng đường dẫn:
+    http://localhost/VDO/public/
+
+==> Cài đặt website đã hoàn tất.
+    bây giờ có thể truy cập website theo đường dẫn http://localhost/VDO/public/
